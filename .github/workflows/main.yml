@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: jjquispeopx/android-ci-container:latest, jjquispeopx/android-ci-container:${{ env.GITHUB_REF_NAME }}
+          tags: jjquispeopx/android-ci-container:latest, jjquispeopx/android-ci-container:${{ github.event_name }}
