@@ -2,7 +2,9 @@ name: ci
 
 on:
   workflow_dispatch:  # manual trigger
-  push: [ tags ]
+  push:
+    tags:
+      - '*'
 
 jobs:
   docker:
